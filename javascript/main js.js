@@ -144,12 +144,12 @@ function results() {
             break;
     }
 }
-
 function clear() {
     numberA = "";
     numberB = "";
     numberADone = false;
     operator = "";
-    document.getElementById("demo").innerHTML = " ";
-    alert ('All cleared');
+    let equation = document.getElementById("demo");
+    equation.innerHTML = " ";
+    alert("Cleared");
 }
