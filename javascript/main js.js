@@ -1,6 +1,6 @@
 var numberA = "";
 
-var isNumberADone = false;
+var numberADone = false;
 
 var numberB = "";
 
@@ -9,7 +9,7 @@ var operator = "";
 var result = 0;
 
 function button(val) {
-    if (isNumberADone == false){
+    if (numberADone == false){
         switch(val) {
             case 1:
                 numberA += "1";
@@ -94,29 +94,29 @@ function button(val) {
             alert("no");
             break;
     }
-    return numberB
+    return numberB;
 }
 }
 
-function operators(operator) {
-    switch(operator) {
+function operators(math) {
+    switch(math) {
         case "+":
-            isNumberADone = true;
+            numberADone = true;
             operator = "+"
             document.getElementById("demo").innerHTML = numberA + " " + operator + " " + numberB;
             break;
         case "-":
-            isNumberADone = true;
+            numberADone = true;
             operator = "-"
             document.getElementById("demo").innerHTML = numberA + " " + operator + " " + numberB;
             break;
         case "*":
-            isNumberADone = true;
+            numberADone = true;
             operator = "*"
             document.getElementById("demo").innerHTML = numberA + " " + operator + " " + numberB;
             break;
         case "/":
-            isNumberADone = true;
+            numberADone = true;
             operator = "/"
             document.getElementById("demo").innerHTML = numberA + " " + operator + " " + numberB;
             break;
@@ -148,7 +148,8 @@ function results() {
 function clear() {
     numberA = "";
     numberB = "";
-    isNumberADone = false;
+    numberADone = false;
     operator = "";
-    alert('All cleared');
+    document.getElementById("demo").innerHTML = " ";
+    alert ('All cleared');
 }
