@@ -8,23 +8,24 @@
     </head>
     <body>
         <div>
-        <button class="numbers" name="1" value="1" onclick="button()">1</button>
-        <button class="number2">2</button>
-        <button class="number3">3</button>
-        <button class="plus">+</button>
+        <button class="numbers" name="1" value="1" onclick="button(1)">1</button>
+        <button class="numbers" name="2" value="2" onclick="button(2)">2</button>
+        <button class="numbers" name="3" value="3" onclick="button(3)">3</button>
+        <button class="plus" onclick="operators('+')">+</button>
         <br>
-        <button class="number4">4</button>
-        <button class="number5">5</button>
-        <button class="number6">6</button>
-        <button class="minus">-</button>
+        <button class="numbers" name="4" value="4" onclick="button(4)">4</button>
+        <button class="numbers" name="5" value="5" onclick="button(5)">5</button>
+        <button class="numbers" name="6" value="6" onclick="button(6)">6</button>
+        <button class="minus" onclick="operators('-')">-</button>
         <br>
-        <button class="number7">7</button>
-        <button class="number8">8</button>
-        <button class="number9">9</button>
-        <button class="mutiply">*</button>
+        <button class="numbers" name="7" value="7" onclick="button(7)">7</button>
+        <button class="numbers" name="8" value="8" onclick="button(8)">8</button>
+        <button class="numbers" name="9" value="9" onclick="button(9)">9</button>
+        <button class="mutiply" onclick="operators('*')">*</button>
         <br>
-        <button class="equals" style="width:78px">=</button>
-        <button class="divide">/</button>
+        <button class="equals" style="width:78px" onclick="results()">=</button>
+        <button class="divide" onclick="operators('/')">/</button>
         </div>
+        <button onclick="clear()">clear</button>
     </body>    
 </html>
