@@ -56,7 +56,7 @@ function button(val) {
     switch(val) {
         case 1:
             numberB += "1";
-            document.getElementById("demo").innerHTML = numberA + " " + {operator} + " " + numberB;
+            document.getElementById("demo").innerHTML = numberA + " " + operator + " " + numberB;
             break;
         case 2:
             numberB += "2";
